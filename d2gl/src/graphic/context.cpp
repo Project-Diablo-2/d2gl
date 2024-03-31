@@ -904,6 +904,11 @@ void Context::resetFileTime()
 
 void Context::takeScreenShot()
 {
+	const uint32_t tickCount = GetTickCount();
+
+	if (ssTickCount > tickCount - 1000)
+		return;
+
 	uint8_t* data = new GLubyte[App.viewport.size.x * App.viewport.size.y * 3];
 	memset(data, 0, App.viewport.size.x * App.viewport.size.y * 3);
 
@@ -912,6 +917,8 @@ void Context::takeScreenShot()
 
 	std::string file_name = helpers::saveScreenShot(data, App.viewport.size.x, App.viewport.size.y);
 	delete[] data;
+
+	ssTickCount = tickCount;
 }
 
 void Context::imguiInit()
