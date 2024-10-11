@@ -161,6 +161,10 @@ bool HDText::drawText(const wchar_t* str, int x, int y, uint32_t color, uint32_t
 	if (!isActive() || !str)
 		return false;
 
+	// Hide name and "Gold" behind gold transaction popup in trade window
+	if (*d2::gold_trans_popup && (x > 229 && x < 405) && y == 302)
+		return false;
+
 	auto font = getFont(m_text_size);
 	font->setShadow(1);
 
