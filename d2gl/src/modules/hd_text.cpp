@@ -1054,6 +1054,10 @@ void HDText::drawItemQuantity(bool draw, int x, int y)
 		return;
 	}
 
+	// Hide for items behind gold transaction popup
+	if (*d2::gold_trans_popup && (item_pos.x > 229 && item_pos.x < 405) && (item_pos.y > 161 && item_pos.y < 308))
+		return;
+
 	const auto item = d2::currently_drawing_item;
 	if (item->dwType == d2::UnitType::Item &&
 		d2::getItemLocation(item) != 0xFF &&

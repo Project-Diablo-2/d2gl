@@ -36,6 +36,7 @@ bool* perspective = (bool*)getProc((DLL_D2GFX), (0xE188), (0xE198), (0x10C94), (
 bool* esc_menu_open = (bool*)getProc((DLL_D2CLIENT), (0x1248D8), (0x11A6CC), (0xFB094), (0x1040E4), (0x102B7C), (0xFADA4), (0x11C8B4), (0x3A27E4));
 bool* help_menu_open = (bool*)getProc((DLL_D2CLIENT), (0x1248D8), (0x11A6CC), (0xFB094), (0x1040E4), (0x102B7C), (0xFAE04), (0x11C8B4), (0x3A27E4)); // TODO: only has 1.13c, fix the rest
 bool* is_alt_clicked = (bool*)getProc((DLL_D2CLIENT), (0x1248E8), (0x11A6DC), (0xFB0A4), (0x1040F4), (0x102B8C), (0xFADB4), (0x11C8C4), (0x3A27F4));
+int* gold_trans_popup = (int*)getProc((DLL_D2CLIENT), (0x1248D8), (0x11A6CC), (0xFB094), (0x1040E4), (0x102B7C), (0xFAD74), (0x11C8B4), (0x3A27E4)); // TODO: only has 1.13c, fix the rest
 int is_unit_hovered = 0;
 
 uint32_t* is_in_game = (uint32_t*)getProc((DLL_D2CLIENT), (0x1109FC), (0x1077C4), (0xE48EC), (0xF18C0), (0x11BCC4), (0xF8C9C), (0xF79E0), (0x3A27C0));

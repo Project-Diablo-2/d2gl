@@ -79,6 +79,7 @@ extern bool* perspective;
 extern bool* help_menu_open;
 extern bool* esc_menu_open;
 extern bool* is_alt_clicked;
+extern int* gold_trans_popup;
 extern int is_unit_hovered;
 
 extern uint32_t* is_in_game;
