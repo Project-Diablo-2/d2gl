@@ -102,6 +102,7 @@ struct D2GLApp {
 		glm::vec2 scale = { 1.0f, 1.0f };
 		glm::vec2 unscale = { 1.0f, 1.0f };
 		bool unlock = false;
+		bool draw = true;
 	} cursor;
 
 	Select<glm::uvec2> resolutions = {};

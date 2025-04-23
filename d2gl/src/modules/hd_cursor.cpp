@@ -60,7 +60,7 @@ HDCursor::HDCursor()
 
 void HDCursor::draw()
 {
-	if (!App.hd_cursor)
+	if (!App.hd_cursor || !App.cursor.draw)
 		return;
 
 	// clang-format off

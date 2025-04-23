@@ -18,10 +18,10 @@
 
 #include "pch.h"
 #include "d2gl.h"
-#include "win32.h"
 #include "d2/common.h"
-#include "option/menu.h"
 #include "modules/motion_prediction.h"
+#include "option/menu.h"
+#include "win32.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -39,6 +39,7 @@ __declspec(dllexport) BOOL __stdcall d2glConfigQueryImpl(D2GLConfigId config_id)
 		case D2GL_CONFIG_SHOW_ITEM_QUANTITY: return d2gl::App.show_item_quantity;
 		case D2GL_CONFIG_SHOW_MONSTER_RES: return FALSE;
 		case D2GL_CONFIG_SHOW_FPS: return d2gl::App.show_fps;
+		case D2GL_CONFIG_DRAW_CURSOR: return d2gl::App.cursor.draw;
 	}
 	return FALSE;
 }
@@ -68,6 +69,9 @@ __declspec(dllexport) BOOL __stdcall d2glConfigSetImpl(D2GLConfigId config_id, b
 		case D2GL_CONFIG_SHOW_ITEM_QUANTITY:
 			d2gl::App.show_item_quantity = configVal;
 			bSave = TRUE;
+			break;
+		case D2GL_CONFIG_DRAW_CURSOR:
+			d2gl::App.cursor.draw = configVal;
 			break;
 	}
 	if (bSave) {
