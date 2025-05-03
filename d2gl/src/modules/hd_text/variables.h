@@ -219,6 +219,17 @@ inline std::vector<D2TextInfo> g_options_texts = {
 	{ 0, { 65, 26 }, L"NEW", TextAlign::Right }, // MenuNew.dc6
 	{ 1, { 58, 26 }, L"TRANSLUCENT PARTY", TextAlign::Left }, // TranslucentParty.dc6
 	{ 0, { 172, 26 }, L"SENSITIVITY", TextAlign::Left }, // Sensitivity.dc6
+	{ 1, { 75, 26 }, L"HEALTH/MANA VALUES", TextAlign::Left }, // HealthManaValues.dc6
+	{ 0, { 103, 26 }, L"HEALTH", TextAlign::Right }, // PD2Health.dc6
+	{ 0, { 85, 26 }, L"MANA", TextAlign::Right }, // PD2Mana.dc6
+	{ 0, { 72, 26 }, L"BOTH", TextAlign::Right }, // PD2Both.dc6
+	{ 0, { 136, 26 }, L"/PLAYERS", TextAlign::Left }, // PlayerCount.dc6
+	{ 1, { 26, 36 }, L"SINGLE PLAYER" }, // SinglePlayer.dc6
+	{ 0, { 196, 36 }, L"CONTROLS" }, // PD2Controls.dc6
+	{ 1, { 140, 36 }, L"CONFIGURE HOTKEYS" }, // PD2Hotkeys.dc6
+	{ 1, { 30, 26 }, L"REGENERATE LEVELS", TextAlign::Left }, // AlwaysRegenerateLevels.dc6
+	{ 1, { 2, 26 }, L"WASD MOVEMENT", TextAlign::Left }, // WASDMovement.dc6
+	{ 1, { 94, 26 }, L"CONTROLLER MOVEMENT", TextAlign::Left }, // ControllerMovement.dc6
 };
 inline std::map<uint32_t, std::vector<D2TextInfo>> g_options_text_others = {
 	{ LANG_ESP, {
