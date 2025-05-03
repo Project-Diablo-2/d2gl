@@ -1071,8 +1071,8 @@ void HDText::drawItemQuantity(bool draw, int x, int y)
 	if (item->dwType == d2::UnitType::Item &&
 		d2::getItemLocation(item) != 0xFF &&
 		!d2::checkIfThrowable(item) &&
-		item->v110.dwClassId != 540 &&	// Arrows
-		item->v110.dwClassId != 542		// Bolts
+		!d2::checkMatchingType(item, 5) &&	// Arrows
+		!d2::checkMatchingType(item, 6)		// Bolts
 		)
 	{
 		if (const auto quantity = d2::getUnitStat(item, STAT_ITEMQUANTITY)) {

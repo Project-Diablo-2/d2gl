@@ -43,6 +43,7 @@ typedef uint32_t(__stdcall* getUnitState_t)(UnitAny* unit, uint32_t state_no);
 typedef Room1*(__stdcall* getUnitRoom_t)(UnitAny* unit);
 typedef int(__stdcall* getLevelNoByRoom_t)(Room1* room);
 typedef int(__stdcall* checkIfThrowable_t)(UnitAny* pItem);
+typedef BOOL(__stdcall* isMatchingType_t)(UnitAny* pItem, int nType);
 
 typedef void(__stdcall* clearScreen_t)(bool partial);
 typedef void(__stdcall* drawImage_t)(CellContext* cell, int x, int y, uint32_t gamma, int draw_mode, uint8_t* palette);
@@ -158,6 +159,7 @@ extern getUnitState_t getUnitState_Fn;
 extern getUnitRoom_t getUnitRoom;
 extern getLevelNoByRoom_t getLevelNoByRoom;
 extern checkIfThrowable_t checkIfThrowable;
+extern isMatchingType_t checkMatchingType;
 extern uintptr_t getLevelName_Fn;
 
 extern UnitAny* currently_drawing_unit;
