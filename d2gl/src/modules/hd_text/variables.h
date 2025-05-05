@@ -231,6 +231,7 @@ inline std::vector<D2TextInfo> g_options_texts = {
 	{ 1, { 2, 26 }, L"WASD MOVEMENT", TextAlign::Left }, // WASDMovement.dc6
 	{ 1, { 94, 26 }, L"CONTROLLER MOVEMENT", TextAlign::Left }, // ControllerMovement.dc6
 	{ 0, { 197, 26 }, L"DROP SOUNDS", TextAlign::Left }, // DropSounds.dc6
+	{ 0, { 233, 26 }, L"ITEM HELP TEXT", TextAlign::Left }, // ItemHelpText.dc6
 };
 inline std::map<uint32_t, std::vector<D2TextInfo>> g_options_text_others = {
 	{ LANG_ESP, {
