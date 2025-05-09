@@ -35,6 +35,7 @@ int* video_mode = (int*)getProc((DLL_D2GFX), (0x1D208), (0x1D264), (0x1A220), (0
 bool* perspective = (bool*)getProc((DLL_D2GFX), (0xE188), (0xE198), (0x10C94), (0x10C30), (0x10C8C), (0x10BE0), (0x10BE4), (0x32DA48));
 bool* esc_menu_open = (bool*)getProc((DLL_D2CLIENT), (0x1248D8), (0x11A6CC), (0xFB094), (0x1040E4), (0x102B7C), (0xFADA4), (0x11C8B4), (0x3A27E4));
 bool* help_menu_open = (bool*)getProc((DLL_D2CLIENT), (), (), (), (), (), (0xFAE04), (), ());
+bool* skill_menu_open = (bool*)getProc((DLL_D2CLIENT), (), (), (), (), (), (0xFAD8C), (), ());
 bool* is_alt_clicked = (bool*)getProc((DLL_D2CLIENT), (0x1248E8), (0x11A6DC), (0xFB0A4), (0x1040F4), (0x102B8C), (0xFADB4), (0x11C8C4), (0x3A27F4));
 NPCDialog* gold_dialog = (NPCDialog*)getProc((DLL_D2CLIENT), (), (), (), (), (), (0xFAD60), (), ());
 int is_unit_hovered = 0;

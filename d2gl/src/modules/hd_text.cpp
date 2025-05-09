@@ -227,7 +227,7 @@ bool HDText::drawText(const wchar_t* str, int x, int y, uint32_t color, uint32_t
 			m_map_names = true;
 			return false;
 		} else if (m_text_size != 6) {
-			if (*d2::screen_shift != SCREENPANEL_NONE || *d2::help_menu_open)
+			if (*d2::screen_shift != SCREENPANEL_NONE || *d2::help_menu_open || *d2::skill_menu_open)
 				return true;
 
 			map_text = true;
@@ -1042,7 +1042,7 @@ inline wchar_t HDText::getColor(uint32_t color)
 
 void HDText::drawFpsCounter()
 {
-	if (!App.show_fps || App.game.screen != GameScreen::InGame || *d2::help_menu_open)
+	if (!App.show_fps || App.game.screen != GameScreen::InGame || *d2::help_menu_open || *d2::skill_menu_open)
 		return;
 
 	static wchar_t str[20] = { 0 };

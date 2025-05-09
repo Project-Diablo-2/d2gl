@@ -58,14 +58,14 @@ void MiniMap::draw()
 	static tm gmt_time;
 
 	if (*d2::screen_shift == SCREENPANEL_NONE) {
-		if (!d2::isEscMenuOpen() && !*d2::help_menu_open && !*d2::automap_on) {
+		if (!d2::isEscMenuOpen() && !*d2::help_menu_open && !*d2::automap_on && !*d2::skill_menu_open) {
 			m_bg->setFlags(2, 3, 100);
 			m_map->setFlags(5, 0, 100);
 			App.context->pushObject(m_bg);
 			App.context->pushObject(m_map);
 		}
 
-		if (App.hd_text.active && !*d2::help_menu_open) {
+		if (App.hd_text.active && !*d2::help_menu_open && !*d2::skill_menu_open) {
 			time_t now = time(0);
 			localtime_s(&gmt_time, &now);
 			swprintf_s(time_str, L" | ÿc\x34%.2d:%.2d", gmt_time.tm_hour, gmt_time.tm_min);
