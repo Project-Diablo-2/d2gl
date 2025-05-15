@@ -34,7 +34,7 @@ struct HoveredUnit {
 	uint32_t id = 0;
 	uint32_t hp[2] = { 0 };
 	glm::ivec2 pos = { 0, 0 };
-	wchar_t name[50] = { 0 };
+	wchar_t name[1024] = { 0 };
 	uint32_t color = 0;
 };
 
