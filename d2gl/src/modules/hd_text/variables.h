@@ -235,6 +235,7 @@ inline std::vector<D2TextInfo> g_options_texts = {
 	{ 1, { 59, 26 }, L"MULTI BUTTON LOOT", TextAlign::Left }, // ControllerMultiButtonLoot.dc6
 	{ 0, { 149, 26 }, L"AIM ASSIST", TextAlign::Left }, // AimAssist.dc6
 	{ 0, { 130, 26 }, L"DEADZONE", TextAlign::Left }, // Deadzone.dc6
+	{ 1, { 61, 26 }, L"HIDE GAME PASSWORD", TextAlign::Left }, // HideGamePassword.dc6
 };
 inline std::map<uint32_t, std::vector<D2TextInfo>> g_options_text_others = {
 	{ LANG_ESP, {
