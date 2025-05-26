@@ -196,8 +196,8 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 				cursor_pos.x = glm::min(cursor_pos.x, (int)App.window.size.x);
 				cursor_pos.y = glm::min(cursor_pos.y, (int)App.window.size.y);
 				LPARAM xy = MAKELPARAM(cursor_pos.x, cursor_pos.y);
-				SendMessage(hWnd, WM_LBUTTONUP, 0, xy);
-				SendMessage(hWnd, WM_RBUTTONUP, 0, xy);
+				//SendMessage(hWnd, WM_LBUTTONUP, 0, xy);
+				//SendMessage(hWnd, WM_RBUTTONUP, 0, xy);
 
 				setCursorUnlock();
 			}
