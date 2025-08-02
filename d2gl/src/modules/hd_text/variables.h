@@ -236,6 +236,7 @@ inline std::vector<D2TextInfo> g_options_texts = {
 	{ 0, { 149, 26 }, L"AIM ASSIST", TextAlign::Left }, // AimAssist.dc6
 	{ 0, { 128, 26 }, L"DEADZONE", TextAlign::Left }, // Deadzone.dc6
 	{ 1, { 61, 26 }, L"HIDE GAME PASSWORD", TextAlign::Left }, // HideGamePassword.dc6
+	{ 1, { 11, 26 }, L"RIGHT CLICK EQUIP", TextAlign::Left }, // AutoEquip.dc6
 };
 inline std::map<uint32_t, std::vector<D2TextInfo>> g_options_text_others = {
 	{ LANG_ESP, {
