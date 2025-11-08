@@ -237,6 +237,18 @@ inline std::vector<D2TextInfo> g_options_texts = {
 	{ 0, { 128, 26 }, L"DEADZONE", TextAlign::Left }, // Deadzone.dc6
 	{ 1, { 61, 26 }, L"HIDE GAME PASSWORD", TextAlign::Left }, // HideGamePassword.dc6
 	{ 1, { 11, 26 }, L"RIGHT CLICK EQUIP", TextAlign::Left }, // AutoEquip.dc6
+	{ 0, { 159, 26 }, L"AUTOSYNC", TextAlign::Left }, // Autosync.dc6
+	{ 0, { 121, 26 }, L"AMBIENT", TextAlign::Left }, // AmbientVolume.dc6
+	{ 0, { 117, 26 }, L"COMBAT", TextAlign::Left }, // CombatVolume.dc6
+	{ 0, { 166, 26 }, L"ITEM DROPS", TextAlign::Left }, // ItemDropVolume.dc6
+	{ 0, { 80, 26 }, L"ITEMS", TextAlign::Left }, // ItemsVolume.dc6
+	{ 0, { 143, 26 }, L"MONSTERS", TextAlign::Left }, // MonstersVolume.dc6
+	{ 0, { 110, 26 }, L"OBJECTS", TextAlign::Left }, // ObjectsVolume.dc6
+	{ 0, { 107, 26 }, L"QUESTS", TextAlign::Left }, // QuestsVolume.dc6
+	{ 0, { 83, 26 }, L"SKILLS", TextAlign::Left }, // SkillsVolume.dc6
+	{ 0, { 31, 26 }, L"UI", TextAlign::Left }, // UiVolume.dc6
+	{ 0, { 98, 26 }, L"VOICES", TextAlign::Left }, // VoiceVolume.dc6
+	{ 0, { 171, 26 }, L"NEXT MENU", TextAlign::Left }, // SNext.dc6
 };
 inline std::map<uint32_t, std::vector<D2TextInfo>> g_options_text_others = {
 	{ LANG_ESP, {
