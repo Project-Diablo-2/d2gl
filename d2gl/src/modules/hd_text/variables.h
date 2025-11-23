@@ -240,7 +240,7 @@ inline std::vector<D2TextInfo> g_options_texts = {
 	{ 0, { 159, 26 }, L"AUTOSYNC", TextAlign::Left }, // Autosync.dc6
 	{ 0, { 121, 26 }, L"AMBIENT", TextAlign::Left }, // AmbientVolume.dc6
 	{ 0, { 117, 26 }, L"COMBAT", TextAlign::Left }, // CombatVolume.dc6
-	{ 0, { 166, 26 }, L"ITEM DROPS", TextAlign::Left }, // ItemDropVolume.dc6
+	{ 0, { 183, 26 }, L"LOOT FILTER", TextAlign::Left }, // ItemDropVolume.dc6
 	{ 0, { 80, 26 }, L"ITEMS", TextAlign::Left }, // ItemsVolume.dc6
 	{ 0, { 143, 26 }, L"MONSTERS", TextAlign::Left }, // MonstersVolume.dc6
 	{ 0, { 110, 26 }, L"OBJECTS", TextAlign::Left }, // ObjectsVolume.dc6
