@@ -122,6 +122,11 @@ glm::ivec2 MotionPrediction::getGlobalOffset(bool skip)
 	return { 0, 0 };
 }
 
+glm::ivec2 MotionPrediction::getGlobalOffsetText()
+{
+	return m_global_offset;
+}
+
 glm::ivec2 MotionPrediction::getGlobalOffsetPerspective()
 {
 	if (App.game.draw_stage == DrawStage::World && m_draw_fn == D2DrawFn::PerspectiveImage)

@@ -106,6 +106,24 @@ __declspec(dllexport) void __cdecl d2glCopyTooltipScreenShot()
 		d2gl::helpers::copyTooltipScreenShot();
 }
 
+__declspec(dllexport) int __cdecl d2glGetGlobalXOffset()
+{
+	if (d2gl::App.hd_text.active) {
+		glm::ivec2 offset = d2gl::modules::MotionPrediction::Instance().getGlobalOffsetText();
+		return offset.x;
+	}
+	return 0;
+}
+
+__declspec(dllexport) int __cdecl d2glGetGlobalYOffset()
+{
+	if (d2gl::App.hd_text.active) {
+		glm::ivec2 offset = d2gl::modules::MotionPrediction::Instance().getGlobalOffsetText();
+		return offset.y;
+	}
+	return 0;
+}
+
 #ifdef __cplusplus
 }
 #endif

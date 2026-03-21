@@ -75,6 +75,7 @@ public:
 	void update();
 
 	glm::ivec2 getGlobalOffset(bool skip = false);
+	glm::ivec2 getGlobalOffsetText();
 	glm::ivec2 getGlobalOffsetPerspective();
 	glm::ivec2 getUnitOffset(uint32_t type_id);
 
