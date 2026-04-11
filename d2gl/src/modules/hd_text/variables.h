@@ -250,6 +250,9 @@ inline std::vector<D2TextInfo> g_options_texts = {
 	{ 0, { 98, 26 }, L"VOICES", TextAlign::Left }, // VoiceVolume.dc6
 	{ 0, { 171, 26 }, L"NEXT MENU", TextAlign::Left }, // SNext.dc6
 	{ 0, { 191, 26 }, L"ELME POTTER", TextAlign::Left }, // ElmePotter.dc6
+	{ 1, { 69, 26 }, L"CONTROLLER BUTTONS", TextAlign::Left }, // MenuControllerBtns.dc6
+	{ 0, { 28, 26 }, L"PS", TextAlign::Left }, // MenuPS.dc6
+	{ 0, { 81, 26 }, L"XBOX", TextAlign::Left }, // MenuXbox.dc6
 };
 inline std::map<uint32_t, std::vector<D2TextInfo>> g_options_text_others = {
 	{ LANG_ESP, {
