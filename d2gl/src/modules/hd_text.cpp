@@ -845,7 +845,7 @@ void HDText::drawEntryText()
 	const auto old_size = m_text_size;
 	setTextSize(18);
 	const auto level_name = d2::getLevelName(*d2::level_no);
-	const int exclusions[25] = {
+	const int exclusions[] = {
 		38,							// Tristram
 		40,							// Lut Gholein
 		66, 67, 68, 69, 70, 71, 72, // Tal Rasha's Tombs
@@ -864,6 +864,8 @@ void HDText::drawEntryText()
 		171,						// Sanctuary of Sin
 		176,						// Zhar's Sanctum
 		185,						// New Uber Tristram
+		200,						// Na-Krul's Abyss
+		201,						// Kyovashad
 	};
 	std::wstring entry_text = L"Entering ";
 
