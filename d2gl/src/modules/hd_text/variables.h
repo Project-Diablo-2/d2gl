@@ -253,6 +253,10 @@ inline std::vector<D2TextInfo> g_options_texts = {
 	{ 1, { 69, 26 }, L"CONTROLLER BUTTONS", TextAlign::Left }, // MenuControllerBtns.dc6
 	{ 0, { 28, 26 }, L"PS", TextAlign::Left }, // MenuPS.dc6
 	{ 0, { 81, 26 }, L"XBOX", TextAlign::Left }, // MenuXbox.dc6
+	{ 1, { 56, 26 }, L"HIDE HEALING POTIONS", TextAlign::Left }, // HideHealingPotions.dc6
+	{ 1, { 32, 26 }, L"HIDE MANA POTIONS", TextAlign::Left }, // HideManaPotions.dc6
+	{ 1, { 179, 26 }, L"ALWAYS SHOW UNDISCOVERED", TextAlign::Left }, // AlwaysShowUndiscovered.dc6
+	{ 1, { 112, 26 }, L"ALWAYS SHOW UNOWNED", TextAlign::Left }, // AlwaysShowUnowned.dc6
 };
 inline std::map<uint32_t, std::vector<D2TextInfo>> g_options_text_others = {
 	{ LANG_ESP, {
